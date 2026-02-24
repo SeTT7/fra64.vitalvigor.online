@@ -1,19 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<!-- TikTok Pixel Code Start -->
-<script>
-!function (w, d, t) {
-  w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie","holdConsent","revokeConsent","grantConsent"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(
-var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var r="https://analytics.tiktok.com/i18n/pixel/events.js",o=n&&n.partner;ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=r,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};n=document.createElement("script")
-;n.type="text/javascript",n.async=!0,n.src=r+"?sdkid="+e+"&lib="+t;e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(n,e)};
 
-
-  ttq.load('D6DR45RC77UBJCQLPGHG');
-  ttq.page();
-}(window, document, 'ttq');
-</script>
-<!-- TikTok Pixel Code End -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="accéder au contenu">
@@ -41,7 +29,7 @@ var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: #ffffff;
+        background-color: #000000; /* Fundo preto */
         padding: 20px;
         line-height: 1.5;
     }
@@ -54,7 +42,7 @@ var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n
     }
 
     .verification-title {
-        color: #000000;
+        color: #cc0000; /* Vermelho */
         font-size: 28px;
         font-weight: bold;
         margin-bottom: 20px;
@@ -62,7 +50,7 @@ var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n
     }
 
     .verification-instruction {
-        color: #333333;
+        color: #ffffff; /* Branco */
         font-size: 21px;
         font-weight: 600;
         margin-bottom: 10px;
@@ -74,11 +62,12 @@ var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n
         margin-top: 8px;
         font-size: 14px;
         font-weight: 600;
-        color: #777777;
+        color: #cccccc; /* Cinza claro */
     }
 
-    .primary-button {
-        background-color: #28a745;
+    .primary-button, 
+    #verification-cta-button {
+        background-color: #cc0000; /* Vermelho */
         color: #ffffff;
         border: none;
         padding: 12px 40px;
@@ -93,10 +82,11 @@ var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n
         text-decoration: none;
     }
 
-    .primary-button:hover {
-        background-color: #218838;
+    .primary-button:hover, 
+    #verification-cta-button:hover {
+        background-color: #b30000; /* Vermelho mais escuro */
         transform: translateY(-2px);
-        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        box-shadow: 0 4px 8px rgba(0,0,0,0.3);
     }
 
     .cta-button-container {
@@ -124,8 +114,8 @@ var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n
     <h1 class="verification-title">EXCLUSIVE CONTENT</h1>
 
     <p class="verification-instruction">
-        "This has already helped thousands of women."
-        <span class="quote-author">– Jennifer A.</span>
+        "This trick has already helped thousands of men."
+        <span class="quote-author">– Robert H.</span>
     </p>
     
     <div class="cta-button-container"> 
@@ -142,7 +132,7 @@ document.getElementById("verification-cta-button")
     e.preventDefault();
 
     const response = await fetch(
-      "https://fra63vitalpeaklink.endersonset11.workers.dev/",
+      "https://fra64vitalvigorbutton.endersonset11.workers.dev/",
       { method: "POST" }
     );
 
